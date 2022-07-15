@@ -1,0 +1,36 @@
+https://www.google.com/maps/place/SSTec+Tutorials/@24.3721584,88.5934403,21z/data=!4m5!3m4!1s0x39fbef00f5cc2d69:0xe0514c7328001b16!8m2!3d24.372118!4d88.593541
+
+
+  <script>
+  
+        var map = new GMaps({
+      el: '#map2',
+      lat:24.3720997,
+      lng:88.5934895
+    });
+        map.addMarker({
+       lat:24.3720997,
+       lng:88.5934895,
+        title: 'Lima',
+        details: {
+          database_id: 42,
+          author: 'HPNeo'
+        },
+        click: function(e){
+          if(console.log)
+            console.log(e);
+          alert('You clicked in this marker');
+        },
+        mouseover: function(e){
+          if(console.log)
+            console.log(e);
+        }
+      });
+       
+  </script>
+
+
+#map2{
+	width: 100%;
+	height: 400px;
+}
